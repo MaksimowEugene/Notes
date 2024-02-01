@@ -76,7 +76,7 @@ final class NoteViewController: UIViewController {
     private var textActionsSegmentedControl: UISegmentedControl = {
         let segmentedControl = UISegmentedControl(items: Constants.segmentedItems)
         segmentedControl.selectedSegmentIndex = -1
-        segmentedControl.addTarget(NoteViewController.self, action: #selector(segmentedControlValueChanged(_:)), for: .valueChanged)
+        segmentedControl.addTarget(self, action: #selector(segmentedControlValueChanged(_:)), for: .valueChanged)
         
         return segmentedControl
     }()

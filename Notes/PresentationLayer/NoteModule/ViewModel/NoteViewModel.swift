@@ -28,7 +28,6 @@ final class NoteViewModel {
         
         noteText.sink { [weak self] noteText in
             self?.noteModel.text = noteText
-            print(self?.noteModel.text ?? "")
         }.store(in: &cancellables)
     }
 }
